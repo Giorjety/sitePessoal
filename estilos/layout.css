@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Estilo para configurar logo*/
+.logo{
+    width: 80px;/*Define a largura do elemento, neste caso a imagem que está com a classe logo*/
+    height: 80px;/*Define a altura do elemento*/
+    border-radius: 50%;
+}
+/*Formatando o cabeçalho da página*/
+body>header{
+    background-color: #333;/*cor de fundo do elemento*/
+    color: #fff;/*cor da fonte do elemento*/
+    display: flex;/* a posição do elemento em relação a tela*/
+    align-items: center;/*alinhamento dos itens do elemento, neste caso do header*/
+    padding: 20px;/*Espaçamento interno do elemento, adiciona espaço entre
+    o conteúdo e as bordas do contêner(elemento)*/
+    position: fixed;/*Posição do elemento*/
+    top:0;
+    width: 100%;
+    height: 80px;
+    justify-content: start;
+    z-index: 1100;/*Mantém o cabeçalho acima do resto*/
+    /*Define a camada do elemento, quanto maior o valor mais à frente ele fica 
+    sobre os outros elementos*/
+}
+header h1{
+    margin: 0;
+    font-size: 24px;
+}
+header figure{
+    margin:0 15px;
+}
+/*Estilos para barra de navegação*/
+nav{
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    display: block;
+    clear: both;
+    margin-top: 110px;
+    z-index: 1000;
+}
+nav ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+/*Estilos do conteúdo principal(main)*/
+main{
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;/*Espaçamento abaixo do elemento anterior, que neste
+    caso nav*/
+}
+/*Estilos para o rodapé*/
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    /*position: relative;*/
+    width: 100%;
+    /*height: 30px;*/
+}
